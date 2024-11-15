@@ -7,6 +7,7 @@ return {
     'lewis6991/gitsigns.nvim',
     opts = {
       on_attach = function(bufnr)
+        print('gitsigns on_attach triggered for buffer ' .. bufnr)
         local gitsigns = require 'gitsigns'
 
         local function map(mode, l, r, opts)
